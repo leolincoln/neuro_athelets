@@ -4,7 +4,7 @@ def readme(readme_name):
         return f.read()
 def main(readme_name):
     setup(name='neuro_athelets',
-            version='0.1',
+            version='0.11',
             description='python ml library for neuro eeg data',
             long_description=readme(readme_name),
             classifiers=[

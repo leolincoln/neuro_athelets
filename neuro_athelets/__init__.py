@@ -4,3 +4,4 @@ import analytics_engine
 import read_csv as ttest
 import read_csv_anova as anova
 import read_csv_wilcox as wilcox
+from read_linr import csv2matrix
