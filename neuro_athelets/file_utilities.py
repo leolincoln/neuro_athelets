@@ -4,7 +4,24 @@ Created on Mon Nov 24 09:48:28 2014
 
 @author: leoliu
 """
-
+#format the current directory names
+#1. check for ' - ' and replace by '_'
+#2. check for ' : ' and replace by '_'
+#3. check for ' ' and replace by '_'
+def format_current_d():
+    from glob import glob
+    import os
+    directories = glob('*')
+    new_d = []
+    for d in directories:
+        new_d = d.replace(' - ','_')
+        new_d = new_d.replace(' : ','_')
+        new_d = new_d.replace(' ','_')
+        os.system('mv "'+d+'" '+new_d)
+    #end
+    return 0
+    
+    
 #not used
 def getFileNames():
     import glob
