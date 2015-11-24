@@ -94,4 +94,5 @@ def readYaml(fName):
         return data
     except Exception as e:
         print e
-        
+if __name__== '__main__':
+    format_current_d() 
